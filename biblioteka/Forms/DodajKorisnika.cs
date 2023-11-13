@@ -16,5 +16,17 @@ namespace biblioteka.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblPrihvati_Click(object sender, EventArgs e)
+        {
+            bool exceptionFound = false;
+
+            if (exceptionFound == false) DialogResult = DialogResult.OK;
+        }
     }
 }

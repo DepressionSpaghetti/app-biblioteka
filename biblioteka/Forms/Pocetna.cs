@@ -22,14 +22,16 @@ namespace biblioteka
         {
             DodajKorisnika noviKorisnik = new DodajKorisnika();
 
-            noviKorisnik.ShowDialog(Owner);
+            if(noviKorisnik.ShowDialog(Owner) == DialogResult.OK)
+            { }
         }
 
         private void dodajKnjiguToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DodajKnjigu novaKnjiga = new DodajKnjigu();
 
-            novaKnjiga.ShowDialog(Owner);
+            if (novaKnjiga.ShowDialog(Owner) == DialogResult.OK)
+            { }
         }
     }
 }
