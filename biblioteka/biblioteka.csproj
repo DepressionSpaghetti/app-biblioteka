@@ -67,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DodajKnjigu.resx">
+      <DependentUpon>DodajKnjigu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DodajKorisnika.resx">
       <DependentUpon>DodajKorisnika.cs</DependentUpon>
     </EmbeddedResource>

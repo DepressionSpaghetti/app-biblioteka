@@ -28,68 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMail = new System.Windows.Forms.Label();
+            this.lblIme = new System.Windows.Forms.Label();
+            this.lblPrezime = new System.Windows.Forms.Label();
+            this.lblAdresa = new System.Windows.Forms.Label();
+            this.lblTelefon = new System.Windows.Forms.Label();
+            this.txtIme = new System.Windows.Forms.TextBox();
+            this.txtPrezime = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
+            this.txtAdresa = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.lblPrihvati = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblMail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblMail.AutoSize = true;
+            this.lblMail.Location = new System.Drawing.Point(73, 244);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(78, 25);
+            this.lblMail.TabIndex = 0;
+            this.lblMail.Text = "E-mail:";
             // 
-            // label2
+            // lblIme
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblIme.AutoSize = true;
+            this.lblIme.Location = new System.Drawing.Point(99, 98);
+            this.lblIme.Name = "lblIme";
+            this.lblIme.Size = new System.Drawing.Size(52, 25);
+            this.lblIme.TabIndex = 1;
+            this.lblIme.Text = "Ime:";
             // 
-            // label3
+            // lblPrezime
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.lblPrezime.AutoSize = true;
+            this.lblPrezime.Location = new System.Drawing.Point(55, 171);
+            this.lblPrezime.Name = "lblPrezime";
+            this.lblPrezime.Size = new System.Drawing.Size(96, 25);
+            this.lblPrezime.TabIndex = 2;
+            this.lblPrezime.Text = "Prezime:";
             // 
-            // label4
+            // lblAdresa
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 323);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.lblAdresa.AutoSize = true;
+            this.lblAdresa.Location = new System.Drawing.Point(65, 390);
+            this.lblAdresa.Name = "lblAdresa";
+            this.lblAdresa.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblAdresa.Size = new System.Drawing.Size(86, 25);
+            this.lblAdresa.TabIndex = 3;
+            this.lblAdresa.Text = "Adresa:";
             // 
-            // label5
+            // lblTelefon
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 413);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblTelefon.AutoSize = true;
+            this.lblTelefon.Location = new System.Drawing.Point(12, 317);
+            this.lblTelefon.Name = "lblTelefon";
+            this.lblTelefon.Size = new System.Drawing.Size(139, 25);
+            this.lblTelefon.TabIndex = 4;
+            this.lblTelefon.Text = "Broj telefona:";
+            // 
+            // txtIme
+            // 
+            this.txtIme.Location = new System.Drawing.Point(294, 95);
+            this.txtIme.Name = "txtIme";
+            this.txtIme.Size = new System.Drawing.Size(212, 31);
+            this.txtIme.TabIndex = 5;
+            // 
+            // txtPrezime
+            // 
+            this.txtPrezime.Location = new System.Drawing.Point(294, 168);
+            this.txtPrezime.Name = "txtPrezime";
+            this.txtPrezime.Size = new System.Drawing.Size(212, 31);
+            this.txtPrezime.TabIndex = 6;
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(294, 241);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(212, 31);
+            this.txtMail.TabIndex = 7;
+            // 
+            // txtTelefon
+            // 
+            this.txtTelefon.Location = new System.Drawing.Point(294, 314);
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Size = new System.Drawing.Size(212, 31);
+            this.txtTelefon.TabIndex = 8;
+            // 
+            // txtAdresa
+            // 
+            this.txtAdresa.Location = new System.Drawing.Point(294, 387);
+            this.txtAdresa.Name = "txtAdresa";
+            this.txtAdresa.Size = new System.Drawing.Size(212, 31);
+            this.txtAdresa.TabIndex = 9;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(170, 494);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(123, 123);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Ponisti";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // lblPrihvati
+            // 
+            this.lblPrihvati.Location = new System.Drawing.Point(397, 494);
+            this.lblPrihvati.Name = "lblPrihvati";
+            this.lblPrihvati.Size = new System.Drawing.Size(123, 123);
+            this.lblPrihvati.TabIndex = 11;
+            this.lblPrihvati.Text = "Prihvati";
+            this.lblPrihvati.UseVisualStyleBackColor = true;
+            this.lblPrihvati.Click += new System.EventHandler(this.lblPrihvati_Click);
             // 
             // DodajKorisnika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 718);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(688, 643);
+            this.Controls.Add(this.lblPrihvati);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.txtAdresa);
+            this.Controls.Add(this.txtTelefon);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.txtPrezime);
+            this.Controls.Add(this.txtIme);
+            this.Controls.Add(this.lblTelefon);
+            this.Controls.Add(this.lblAdresa);
+            this.Controls.Add(this.lblPrezime);
+            this.Controls.Add(this.lblIme);
+            this.Controls.Add(this.lblMail);
             this.Name = "DodajKorisnika";
             this.Text = "DodajKorisnika";
             this.ResumeLayout(false);
@@ -99,10 +169,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.Label lblIme;
+        private System.Windows.Forms.Label lblPrezime;
+        private System.Windows.Forms.Label lblAdresa;
+        private System.Windows.Forms.Label lblTelefon;
+        private System.Windows.Forms.TextBox txtIme;
+        private System.Windows.Forms.TextBox txtPrezime;
+        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.TextBox txtTelefon;
+        private System.Windows.Forms.TextBox txtAdresa;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button lblPrihvati;
     }
 }

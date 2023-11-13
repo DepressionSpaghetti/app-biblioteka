@@ -10,3 +10,4 @@ C:\Users\piero\Documents\School\4.d\NiOP\biblioteka\biblioteka\obj\Debug\bibliot
 C:\Users\piero\Documents\School\4.d\NiOP\biblioteka\biblioteka\obj\Debug\biblioteka.csproj.CoreCompileInputs.cache
 C:\Users\piero\Documents\School\4.d\NiOP\biblioteka\biblioteka\obj\Debug\biblioteka.exe
 C:\Users\piero\Documents\School\4.d\NiOP\biblioteka\biblioteka\obj\Debug\biblioteka.pdb
+C:\Users\piero\Documents\School\4.d\NiOP\biblioteka\biblioteka\obj\Debug\biblioteka.Forms.DodajKnjigu.resources
