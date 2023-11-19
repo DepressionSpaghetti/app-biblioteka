@@ -13,6 +13,9 @@ namespace biblioteka
 {
     public partial class Pocetna : Form
     {
+        List<Knjiga> knjigaList = new List<Knjiga>();
+        List<Korisnik> korisnikList = new List<Korisnik>();
+
         public Pocetna()
         {
             InitializeComponent();
@@ -23,7 +26,12 @@ namespace biblioteka
             DodajKorisnika noviKorisnik = new DodajKorisnika();
 
             if(noviKorisnik.ShowDialog(Owner) == DialogResult.OK)
-            { }
+            {
+                Korisnik korisnik = new Korisnik(noviKorisnik.Email, noviKorisnik.Ime,
+                    noviKorisnik.Prezime, noviKorisnik.Adresa, noviKorisnik.BrojTelefona);
+
+                korisnikList.Add(korisnik);
+            }
         }
 
         private void dodajKnjiguToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,7 +39,11 @@ namespace biblioteka
             DodajKnjigu novaKnjiga = new DodajKnjigu();
 
             if (novaKnjiga.ShowDialog(Owner) == DialogResult.OK)
-            { }
+            {
+                Knjiga knjiga = new Knjiga(novaKnjiga.Naslov, novaKnjiga.Autor, novaKnjiga.Izdavac);
+
+                knjigaList.Add(knjiga);
+            }
         }
     }
 }

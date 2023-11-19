@@ -12,6 +12,17 @@ namespace biblioteka.Forms
 {
     public partial class DodajKnjigu : Form
     {
+        bool exceptionFound = false;
+        string naslov, autor, izdavac;
+        
+        public string Naslov { get => naslov; }
+        public string Autor { get => autor; }
+        public string Izdavac { get => izdavac; }
+
+        string NaslovS { set => naslov = value; }
+        string AutorS { set => autor = value; }
+        string IzdavacS { set => izdavac = value; }
+
         public DodajKnjigu()
         {
             InitializeComponent();
@@ -24,12 +35,21 @@ namespace biblioteka.Forms
 
         private void lblPrihvati_Click(object sender, EventArgs e)
         {
-            bool exceptionFound = false;
+            exceptionFound = false;
+
+            try
+            {
+                NaslovS = txtNaslov.Text;
+                AutorS = txtAutor.Text;
+                IzdavacS = txtIzdavac.Text;
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Ispunite sve podatke", "Nepotpuni podatci",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                exceptionFound = true;
+            }
 
             if (exceptionFound == false) DialogResult = DialogResult.OK;
-            {
-
-            }
         }
     }
 }
