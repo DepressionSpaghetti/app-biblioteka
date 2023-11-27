@@ -59,6 +59,12 @@
     <Compile Include="Forms\DodajKnjigu.Designer.cs">
       <DependentUpon>DodajKnjigu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Knjige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Knjige.Designer.cs">
+      <DependentUpon>Knjige.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Pocetna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DodajKorisnika.resx">
       <DependentUpon>DodajKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Knjige.resx">
+      <DependentUpon>Knjige.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pocetna.resx">
       <DependentUpon>Pocetna.cs</DependentUpon>

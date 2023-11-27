@@ -13,8 +13,11 @@ namespace biblioteka
 {
     public partial class Pocetna : Form
     {
-        List<Knjiga> knjigaList = new List<Knjiga>();
-        List<Korisnik> korisnikList = new List<Korisnik>();
+        static List<Knjiga> knjigaList = new List<Knjiga>();
+        static List<Korisnik> korisnikList = new List<Korisnik>();
+
+        static public List<Knjiga> KnjigaList { get => knjigaList; }
+        static public List<Korisnik> KorisnikList { get => korisnikList; }
 
         public Pocetna()
         {
